@@ -32,3 +32,7 @@ only days where the temperature is below 30 degrees.
   is usually the first kind of analysis you perform in order to summarize the data and get a feel for it as a whole. One of the first things you might want to ascertain is how many records are in the data set. This is known as the count. Now
 you can calculate the count for any kind of column, not just numeric columns. It just tells you how many rows there are. For categorical data, you might want to calculate something called the distinct count; which counts how many distinct values that are. In this case, the data set includes sales data for seven
 discrete days of the week. The total, or sum, is a common aggregation of interest.
+
+### `Grouping and Summarizing Data`
+When your dataset includes categorical values, it's common to group the data by
+categories and calculate subtotals for numeric values.
