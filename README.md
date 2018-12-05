@@ -36,3 +36,10 @@ discrete days of the week. The total, or sum, is a common aggregation of interes
 ### `Grouping and Summarizing Data`
 When your dataset includes categorical values, it's common to group the data by
 categories and calculate subtotals for numeric values.
+
+ ### `Measuring Central Tendency`
+
+ Statistical analysis is at the core of data science. Using statistics, you can learn about the distribution of the data, how much of variance there is between values, and how values for one feature of the data I seem to influence other
+values. The starting point for learning how to use statistics to analyze data is to understand the common descriptive statistics that we can use to understand the distribution of our data.(Min, Max, Mean, Median, Mode). A histogram, and it shows the frequency of data values within distinct ranges, or bins; and in this case each bin covers a range of ten values. Note that the mode, being the most frequent value, causes a peak in the data set; and in this case the mean median and mode are all more or less centrally located, with symmetric tails on the left and right showing progressively fewer values for more extreme temperatures.
+When data is distributed as a bell curve like this, we call a normal distribution; and statisticians love to work with normally distributed data like this for a number of reasons, some of which we'll explore later. Another way you can visualize the distribution of your data is to use a box and whiskers plot. In this case the box in the center represents the inner two quartiles of the data, with the median showing as a line. in Excel you can also display the mean as an X.
+The whiskers show the rest of the data to the minimum and maximum. You can show a box and whisker chart in this horizontal orientation, but often, especially in Excel, it's shown in this vertical view.
