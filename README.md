@@ -42,4 +42,47 @@ categories and calculate subtotals for numeric values.
  Statistical analysis is at the core of data science. Using statistics, you can learn about the distribution of the data, how much of variance there is between values, and how values for one feature of the data I seem to influence other
 values. The starting point for learning how to use statistics to analyze data is to understand the common descriptive statistics that we can use to understand the distribution of our data.(Min, Max, Mean, Median, Mode). A histogram, and it shows the frequency of data values within distinct ranges, or bins; and in this case each bin covers a range of ten values. Note that the mode, being the most frequent value, causes a peak in the data set; and in this case the mean median and mode are all more or less centrally located, with symmetric tails on the left and right showing progressively fewer values for more extreme temperatures.
 When data is distributed as a bell curve like this, we call a normal distribution; and statisticians love to work with normally distributed data like this for a number of reasons, some of which we'll explore later. Another way you can visualize the distribution of your data is to use a box and whiskers plot. In this case the box in the center represents the inner two quartiles of the data, with the median showing as a line. in Excel you can also display the mean as an X.
-The whiskers show the rest of the data to the minimum and maximum. You can show a box and whisker chart in this horizontal orientation, but often, especially in Excel, it's shown in this vertical view.
+The whiskers show the rest of the data to the minimum and maximum. You can show a box and whisker chart in this horizontal orientation, but often, especially in Excel, it's shown in this vertical view. `Measuring Variance`: We indicate the population variance as Sigma-squared. We calculate the square root of the
+variance to calculate something called the standard deviation.  In a normal distribution the mean is in the middle
+and around 68.26% of all observations lie within one standard
+deviation above or below the mean. Around 95.45% of observations
+lie within two standard deviations of the mean;
+and around 99.73% of observations lie within three standard deviations of the
+mean. So by knowing the mean and the standard deviation, we get a pretty good
+idea of how the data in our sample is distributed, allowing for variances in
+the values.
+ ### `Working with Samples`
+  Generally you work with samples of data that are representative
+of the data, and you use sample statistics such as the mean and standard
+deviation to approximate the parameters of the full data population. what can we do to ensure our sample statistics are truly representative of
+the full population parameters. Well up to now we've used fairly small sample
+sizes. In practice it's best to get as large a sample as you can. The larger the
+sample, the better it will approximate the distribution and parameters of the
+full population. Another thing you can do is to take multiple random samples. Each
+sample has a sample mean, and you can record these to form what's called a
+sampling distribution. With enough samples, two things happen. One is that,
+thanks to something called the central limit theorem, the sampling distribution
+takes on a normal shape regardless of the shape of the population distribution;
+and the second thing is that the mean of the sampling distribution, in other words
+the mean of all the sample means, will be the same as the population mean.
+
+### `Correlation`
+So far we've talked about descriptive statistics that help us understand the
+distribution of values in a data set, and we've seen how to work with samples and
+use statistics as approximations for full population parameters. let's examine how we can use statistics to find relationships between
+different fields in our data. 
+ But can we quantify
+this relationship? Well yes, we can calculate a statistic called correlation
+and in Excel you do it using the Correl function. Correlation is a value between
+negative 1 and positive 1 that indicates the strength and direction of a
+relationship. A value near positive 1 indicates a positive relationship in
+which an increase in one value generally correlates with an increase in the other. A
+value near negative 1 on the other hand indicates a negative correlation in
+which an increase in one value tends to be associated with a decrease in the
+other value.  Now it's important to remember that correlation
+is not the same thing as causation.
+This statistic shows us that high sales tend
+to occur on days with high temperatures, but that doesn't necessarily prove that
+Rosie sells more lemonade because it's hot. The statistics could just as easily
+be used to claim that the more lemonade Rosie sells the hotter it gets!
+
