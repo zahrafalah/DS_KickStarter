@@ -116,4 +116,26 @@ label in the training data set. We train the model by finding similarities in th
 observations.
 After the model is trained, each new observation is assigned to a cluster of
 observations with similar characteristics.
+OK, When you need to predict a numeric value, you can use a supervised learning
+technique called regression. 
+ We can use the model to
+predict the function of X for our evaluation data, and then compare the
+predictions or scored labels to the actual labels that we know to be true. We
+then calculate the standard deviation for these as errors, or residuals, of the
+model. Now we call this measure of error the root mean squared error, or RMSE;
+and it's an absolute measure of the standard deviation of error in the model.
+For example, an RMSE value of 3 means that the standard deviation of the
+error from our test data is three sales. Another metric that we can use to
+evaluate a regression model is the mean absolute error, which is just the average
+of the absolute values of the errors. In effect MAE is the average of all the
+model errors. Relative absolute error is the MAE relative to the mean value of
+the label. Now because this is a relative metric, it's not measured in sales but
+rather it gives you a relative value for the error within a scale of zero and one;
+with zero being a perfect model. Relative metrics like this can be useful way to
+generally evaluate the performance of a model. Another relative metric is
+relative squared error, which is the RMSE divided by the sum of the squares of
+the label; and finally the coefficient of determination, which is also known as the
+R-squared of the model, represents the predictive power of the model as a value
+between 0 and 1. A value of 0 means that the model is random and has learned
+nothing about the data. A perfect fit would result with a value of 1.
 
