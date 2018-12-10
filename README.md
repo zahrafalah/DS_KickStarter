@@ -86,3 +86,34 @@ to occur on days with high temperatures, but that doesn't necessarily prove that
 Rosie sells more lemonade because it's hot. The statistics could just as easily
 be used to claim that the more lemonade Rosie sells the hotter it gets!
 
+### `Machine learning`
+Machine learning is a way of using data to train a computer model so that it can
+predict new data values based on known inputs. The model learns from training
+cases, and we can then use that trained model to make predictions for new data
+cases. Now the key to understanding this is that fundamentally computers are very
+good at one thing - performing calculations; and in fact the earliest
+computers were known as calculation engines. To have a computer make
+intelligent predictions from data, we just need a way to train it to perform
+the correct calculations. So we start with a data set that contains historical
+records, often called cases or observations. Each observation includes
+numeric features that quantify a characteristic of the item that we're
+working with. So let's call this X. In general, we also have some value that
+we're trying to predict; let's call this Y. We use our training cases to train a
+machine learning model so that it can calculate a value for Y from the
+features in X. So in very simplistic terms, what we're doing is creating a
+function that operates on a set of features X, to produce predictions Y.
+Generally speaking, there are two broad kinds of machine learning: supervised and
+unsupervised. In supervised learning scenarios, we start with observations
+that include known values for the variable we want to predict. We call
+these labels. Then we use a machine learning algorithm to train a model that
+fits the features to the known label. Because we started with a known label
+value, we can validate the model by comparing the value predicted to the
+actual label value that we had in the first place; then when we're happy that
+the model works we can use it with new observations for which the label is
+unknown and generate new predicted values. Unsupervised learning is
+different from supervised machine learning in that we don't have a known
+label in the training data set. We train the model by finding similarities in the
+observations.
+After the model is trained, each new observation is assigned to a cluster of
+observations with similar characteristics.
+
