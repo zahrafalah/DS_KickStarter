@@ -1,3 +1,4 @@
+//Azure Studio R note book
 # Print statistics for Temperature and Sales
 summary(dat[c('Temperature', 'Sales')])
 print('Standard Deviations:')

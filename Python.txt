@@ -1,3 +1,4 @@
+//Azure Studio Python Note book
 %matplotlib inline
 from matplotlib import pyplot as plt
 
